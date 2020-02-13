@@ -21,7 +21,7 @@ request(address, (error, response, body) => {
       if (error) {
         throw error;
       }
-      console.log(stat.size);
+      console.log(`Downloaded and saved ${stat.size} bytes to ${path}`);
     })
 
   })
